@@ -68,7 +68,7 @@ export default function Sponsors() {
               src={sponsor.logo} 
               alt={sponsor.name} 
               className="h-10 md:h-12 object-contain filter grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300" 
-              // **Note:** Your logos should ideally be PNGs or SVGs with a transparent background.
+              
             />
           </motion.div>
         ))}
