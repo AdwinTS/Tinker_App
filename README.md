@@ -56,8 +56,8 @@ Make sure you have **Node.js** and **npm** (or yarn/pnpm) installed.
 
 Clone the repository:
 ```bash
-git clone https://github.com/TinkerHubMEC/TinkHack2025-LandingPage.git
-cd TinkHack2025-LandingPage
+git clone https://github.com/AdwinTS/Tinker_App.git
+cd Tinker_App
 ```
 ## Images
 
