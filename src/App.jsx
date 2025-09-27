@@ -6,11 +6,11 @@ import Sponsors from "./components/Sponsors";
 import Registration from "./components/Registration";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
-
+import BubbleNavWrapper from "./components/BubbleNav";
 function App() {
   return (
     <div className="bg-black text-white">
-      <Navbar />
+      <BubbleNavWrapper />
       <Hero />
       <EventOverview />
       <Timeline />

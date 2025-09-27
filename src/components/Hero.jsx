@@ -1,27 +1,36 @@
 // src/components/Hero.js
 import { motion } from "framer-motion";
-// Remove Vanta imports (useEffect, useRef, THREE, WAVES) if you are using the image as the background.
-import fullPageBackground from '../assets/gem.png'; // **1. IMPORT THE NEW BACKGROUND IMAGE**
+// Removed unused import: import fullPageBackground from '../assets/gem.png'; 
+// import MetaBalls from './MetaBalls';
+import Aurora from './Aurora';
 
 export default function Hero() {
 
-  // **2. REMOVE THE useEffect and useRef** for Vanta.js setup here
+  // I've adjusted your colors slightly to better match the cyan/purple theme, 
+  // but you can use your original colors if you prefer!
+  const auroraColors = ["#1D4ED8", "#06B6D4", "#A855F6"]; // Blue, Cyan, Purple
 
   return (
-    // **3. UPDATE THE OUTER DIV**
-    // We add a background image, set it to cover, and center it.
+    // 3. FULL SCREEN CONTAINER
     <div
       className="h-screen flex items-center justify-center text-center relative overflow-hidden bg-black"
-      style={{
-        backgroundImage: `url(${fullPageBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
+      // REMOVED: style={{ backgroundImage: ..., backgroundSize: 'cover', ... }}
     >
       
-      {/* 4. ADD AN OVERLAY for better text contrast */}
-      <div className="absolute inset-0 bg-black opacity-60"></div>
+      {/* 1. AURORA BACKGROUND (Placed directly inside, covering everything) */}
+      <div className="absolute inset-0 z-0">
+          <Aurora
+            colorStops={auroraColors}
+            blend={0.5}
+            amplitude={1.0}
+            speed={0.5}
+          />
+      </div>
+      
+      {/* 2. ADD A DARKER OVERLAY for better text contrast, sits above Aurora (z-index 1) */}
+      <div className="absolute inset-0 bg-black opacity-60 z-[1]"></div>
 
+      {/* 3. MAIN CONTENT (Sits highest, z-index 10) */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -44,17 +53,6 @@ export default function Hero() {
           Register Now
         </motion.a>
         
-        {/* **5. OPTIONAL: KEEP your small rotating logo** (make sure the path is correct) */}
-        {/* If you want the rotating logo, you'll need to define geminiLogo and the animation */}
-        {/*
-        <motion.img
-          src={geminiLogo} // make sure to re-import geminiLogo if you use it
-          alt="logo"
-          className="w-20 h-20 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 opacity-20"
-          animate={{ rotate: 360 }}
-          transition={{ repeat: Infinity, duration: 20, ease: "linear" }}
-        />
-        */}
       </motion.div>
     </div>
   );
