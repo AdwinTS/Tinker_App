@@ -2,14 +2,14 @@
 import { motion } from "framer-motion";
 
 const sponsors = [
-  { name: "GlobalTech", logo: "/sponsors/globaltech.png" },
-  { name: "Quantum Innovations", logo: "/sponsors/quantum.png" },
-  { name: "CipherSoft", logo: "/sponsors/ciphersoft.png" },
-  { name: "DevX", logo: "/sponsors/devx.png" },
-  { name: "CodeHub", logo: "/sponsors/codehub.png" },
-  { name: "DigitalForge", logo: "/sponsors/digitalforge.png" },
-  { name: "NextGen Solutions", logo: "/sponsors/nextgen.png" },
-  { name: "TechWave", logo: "/sponsors/techwave.png" },
+  { name: "GlobalTech" },
+  { name: "Quantum Innovations" },
+  { name: "CipherSoft" },
+  { name: "DevX" },
+  { name: "CodeHub" },
+  { name: "DigitalForge"},
+  { name: "NextGen Solutions" },
+  { name: "TechWave"},
 ];
 
 // Animation variants for the logos
