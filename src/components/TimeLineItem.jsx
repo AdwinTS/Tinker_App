@@ -1,16 +1,13 @@
-// src/components/TimelineItem.jsx (Create this new file)
+// src/components/TimelineItem.jsx 
 
 import React from 'react';
 
-// You'll likely need an icon here. Install a library like lucide-react or heroicons.
-// Example: import { Clock } from 'lucide-react'; 
+
 
 const TimelineItem = ({ title, content, date, isLast }) => {
   return (
     <div className="flex relative items-start pb-12">
-      {/* This is the main line and the arrow point.
-        The line is created by the ::before pseudo-element.
-        The arrow is created by the ::after pseudo-element.
+      {/* 
       */}
       <div className="h-full w-1 absolute inset-0 left-3 bg-gray-700 pointer-events-none">
         {/* Hide the line on the last item to prevent it from going past the last event */}
