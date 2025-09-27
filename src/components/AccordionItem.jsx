@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-// For the arrow icon: you'll need to install an icon library like lucide-react (npm install lucide-react)
-// For simplicity, we'll use a standard character for the icon
+
+
 import { ChevronDown } from 'lucide-react'; // If you installed lucide-react
 
 const AccordionItem = ({ title, content }) => {
