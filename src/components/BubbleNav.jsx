@@ -1,10 +1,10 @@
 // src/components/BubbleNav.jsx (or wherever you define your navigation)
 
 import React from 'react';
-import BubbleMenu from './BubbleMenu'; // Make sure this path is correct
+import BubbleMenu from './BubbleMenu'; 
 
 const tinkHackItems = [
-  // ... (Paste the updated item array from above here)
+ 
   { label: 'Overview', href: '#overview', ariaLabel: 'Event Overview', rotation: -8, hoverStyles: { bgColor: '#06b6d4', textColor: '#000000' } },
   { label: 'Timeline', href: '#timeline', ariaLabel: 'Hackathon Schedule', rotation: 8, hoverStyles: { bgColor: '#6366f1', textColor: '#ffffff' } },
   { label: 'Register', href: '#register', ariaLabel: 'Register for Event', rotation: -8, hoverStyles: { bgColor: '#22d3ee', textColor: '#000000' } },
@@ -15,7 +15,7 @@ const tinkHackItems = [
 
 export default function BubbleNavWrapper() {
 
-  // The custom logo using your theme's bold styling
+  
   const tinkHackLogo = (
     <span className="text-2xl font-extrabold text-cyan-400">TinkHack</span>
   );
@@ -26,14 +26,14 @@ export default function BubbleNavWrapper() {
       items={tinkHackItems}
       menuAriaLabel="TinkHack navigation menu"
       
-      // Use transparent/darker colors to blend with your dark theme
-      menuBg="#111827" // Darker background for the closed button (gray-900 equivalent)
-      menuContentColor="#ffffff" // White text for the menu button
       
-      // Use fixed position so it stays on screen when scrolling
+      menuBg="#111827" // Darker background for the closed button (gray-900 equivalent)
+      menuContentColor="#ffffff" 
+      
+      
       useFixedPosition={true} 
       
-      // These are great default animation properties!
+    
       animationEase="back.out(1.5)"
       animationDuration={0.5}
       staggerDelay={0.12}
