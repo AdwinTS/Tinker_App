@@ -1,23 +1,21 @@
 // src/components/Hero.js
 import { motion } from "framer-motion";
-// Removed unused import: import fullPageBackground from '../assets/gem.png'; 
-// import MetaBalls from './MetaBalls';
+
 import Aurora from './Aurora';
 
 export default function Hero() {
 
-  // I've adjusted your colors slightly to better match the cyan/purple theme, 
-  // but you can use your original colors if you prefer!
+  
   const auroraColors = ["#1D4ED8", "#06B6D4", "#A855F6"]; // Blue, Cyan, Purple
 
   return (
-    // 3. FULL SCREEN CONTAINER
+    
     <div
       className="h-screen flex items-center justify-center text-center relative overflow-hidden bg-black"
-      // REMOVED: style={{ backgroundImage: ..., backgroundSize: 'cover', ... }}
+      
     >
       
-      {/* 1. AURORA BACKGROUND (Placed directly inside, covering everything) */}
+    
       <div className="absolute inset-0 z-0">
           <Aurora
             colorStops={auroraColors}
@@ -27,7 +25,7 @@ export default function Hero() {
           />
       </div>
       
-      {/* 2. ADD A DARKER OVERLAY for better text contrast, sits above Aurora (z-index 1) */}
+    
       <div className="absolute inset-0 bg-black opacity-60 z-[1]"></div>
 
       {/* 3. MAIN CONTENT (Sits highest, z-index 10) */}
