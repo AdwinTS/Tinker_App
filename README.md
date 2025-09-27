@@ -62,11 +62,17 @@ cd TinkHack2025-LandingPage
 ## Images
 
 ### Hero page
+<img width="1920" height="966" alt="Screenshot (2160)" src="https://github.com/user-attachments/assets/257b99f8-ef17-4707-ad84-ae695d5537ff" />
 
 ### EventOverview page
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ad44284f-745b-4df6-a357-bc746661f479" />
 
 ### TimeLine page
+<img width="1876" height="914" alt="Screenshot (2162)" src="https://github.com/user-attachments/assets/53e137f5-f786-4740-b8ff-55e80470f052" />
 
 ### Registration page
+<img width="1903" height="905" alt="Screenshot (2164)" src="https://github.com/user-attachments/assets/d7c09d99-1782-46a6-be7b-d36705ce08de" />
 
 ### Contact page
+<img width="1920" height="907" alt="Screenshot (2165)" src="https://github.com/user-attachments/assets/c4c389a5-7697-4890-b855-d33b6d2d6672" />
+
