@@ -1,7 +1,7 @@
 // src/App.js
 import Hero from "./components/Hero";
 import EventOverview from "./components/EventOverview";
-import Timeline from "./components/Timeline";
+import Timeline from "./components/TimeLine";
 import Sponsors from "./components/Sponsors";
 import Registration from "./components/Registration";
 import Contact from "./components/Contact";
