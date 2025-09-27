@@ -1,9 +1,9 @@
-// src/components/EventOverview.jsx (or whatever file holds this section)
+
 
 import AccordionItem from './AccordionItem'; 
 import { motion } from 'framer-motion';
 
-// Define the data for your openable boxes
+
 const overviewData = [
   { 
     title: "What is TinkHack 2025?", 
